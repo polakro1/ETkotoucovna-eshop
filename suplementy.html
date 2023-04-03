@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kotoučovna eshop</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div id="header-left">
+                <a href="index.html">
+                    <image src="images/Logo.svg" alt="Kotoučovna eshop logo"></image>
+                </a>
+            </div>
+            <div id="header-center">
+                <div id="search">
+                    <form>
+                        <button type="submit"></button>
+                        <input type="search">
+                    </form>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="suplementy.html">Suplementy</a>
+                        </li>
+                        <li>
+                            <a href="obleceni.html">Oblečení</a>
+                        </li>
+                        <li>
+                            <a href="doplnky.html">Doplňky</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="header-right">
+                <div>
+                    <a href="login.html">Přihlášení</a>
+                    <a href="kosik.html" id="kosik">1050 Kč</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="sluzby.html">Služby fitness centra</a>
+                        </li>
+                        <li id="clenstvi">
+                            <a href="clenstvi.html">Členství</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="kategorie">
+            <h1>Suplementy</h1>
+            <div class="podkategorie">
+                <a href=""><h3>Proteiny</h3></a>
+                <a href=""><h3>Gainery</h3></a>
+                <a href=""><h3>Aminokyseliny</h3></a>
+                <a href=""><h3>Kreatin</h3></a>
+                <a href=""><h3>Stimulanty a energizéry</h3></a>
+                <a href=""><h3>Anabolizéry</h3></a>
+                <a href=""><h3>Spalovače</h3></a>
+                <a href=""><h3>Kloubní výživa</h3></a>
+                <a href=""><h3>Iontové nápoje</h3></a>
+                <a href=""><h3>Vitamíny</h3></a>
+            </div>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="items" th:each="product : ${products}">
+            <div class="item">
+                <a href="item.html">
+                <img src="images/Logo.svg">
+                <h4 th:text="${product.getName()}">Název</h4>
+                </a>
+                <p th:text="${product.getDescriptionShort}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+                <p class="cena">499 Kč</p>
+                <div class="item-actions">
+                    <p class="skladem">Skladem</p>
+                    <div>
+                        <a href="item.html" class="detail">Detail</a>
+                        <button class="do-kosiku-btn">Do košíku</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="item.html">
+                <img src="images/Logo.svg">
+                <h4 th:text="${product.getName()}">Název</h4>
+                </a>
+                <p th:text="${product.getDescriptionShort}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+                <p class="cena">499 Kč</p>
+                <div class="item-actions">
+                    <p class="skladem">Skladem</p>
+                    <div>
+                        <a href="item.html" class="detail">Detail</a>
+                        <button class="do-kosiku-btn">Do košíku</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="item.html">
+                <img src="images/Logo.svg">
+                <h4 th:text="${product.getName()}">Název</h4>
+                </a>
+                <p th:text="${product.getDescriptionShort}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+                <p class="cena">499 Kč</p>
+                <div class="item-actions">
+                    <p class="skladem">Skladem</p>
+                    <div>
+                        <a href="item.html" class="detail">Detail</a>
+                        <button class="do-kosiku-btn">Do košíku</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="item.html">
+                <img src="images/Logo.svg">
+                <h4 th:text="${product.getName()}">Název</h4>
+                </a>
+                <p th:text="${product.getDescriptionShort}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+                <p class="cena">499 Kč</p>
+                <div class="item-actions">
+                    <p class="skladem">Skladem</p>
+                    <div>
+                        <a href="item.html" class="detail">Detail</a>
+                        <button class="do-kosiku-btn">Do košíku</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="item.html">
+                <img src="images/Logo.svg">
+                <h4 th:text="${product.getName()}">Název</h4>
+                </a>
+                <p th:text="${product.getDescriptionShort}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+                <p class="cena">499 Kč</p>
+                <div class="item-actions">
+                    <p class="skladem">Skladem</p>
+                    <div>
+                        <a href="item.html" class="detail">Detail</a>
+                        <button class="do-kosiku-btn">Do košíku</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
