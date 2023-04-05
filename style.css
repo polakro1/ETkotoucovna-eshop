@@ -20,7 +20,7 @@ h1, h2, h3, h4{
 h1 {
     font-size: 4.5rem;
     margin-bottom: 0;
-    margin-top: 0.5rem;
+
 }
 h2 {
     font-size: 4rem;
@@ -43,6 +43,8 @@ a {
 button {
     font-family: Broshk;
     font-size: 1.3rem;
+    background-color: #FFAB2B;
+    border: none;
 }
 
 body {
@@ -341,6 +343,10 @@ body  hr {
     padding:0 20%;
 }
 
+.vitejte h1 {
+    margin-top: 0.5rem;
+}
+
 .ikonky-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -351,14 +357,21 @@ body  hr {
 .ikonky {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.075);
     border-radius: 10px;
     padding: 10px;
+
+}
+
+.ikonky > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .ikonky img {
-    width: 100%;
+    width: 60%;
 }
 
 .ikonky h2 {
@@ -367,6 +380,7 @@ body  hr {
 }
 
 footer {
+    margin-top: 100px;
     background-color: #3A3A3A;
     padding: 4% 0 0 0;
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 20%);
@@ -463,6 +477,9 @@ footer nav a {
 
 .polozky-kosiku button {
     height: 30px;
+    background-color: white;
+    border: solid 1px #000000;
+
 }
 
 .cena-celkem {
@@ -501,7 +518,135 @@ footer nav a {
     font-size: 2.5rem;
 }
 
+.clenstvi {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    gap: 15px;
+}
 
+.clenstvi > div {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    height: ;
+}
 
+.clenstvi h2 {
+    margin: 0;
+    color: #000000;
+}
+.clenstvi button {
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #FFAB2B;
+    border: none;
+}
 
+#zlate {
+    background-image: linear-gradient(gold, white);
+}
 
+#stribrne {
+    background-image: linear-gradient(silver, white);
+}
+
+#bronzove {
+    background-image: linear-gradient(#CD7F32, white);
+}
+
+.permanentky {
+    margin: 40px 20% 0 20%;
+}
+
+.permanentka {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 1fr;
+    padding: 15px;
+    align-items: center;
+}
+
+.permanentka h3, p {
+    margin: 0;
+}
+
+.permanentka h3 {
+    color: #000000;
+}
+
+.zmena-udaju {
+    align-items: ce;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    font-family: "Open Sans";
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.zmena-udaju input {
+    height: 1.5rem;
+}
+
+.zmena-udaju > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zmena-udaju > div > div:nth-child(even) {
+    text-align: end;
+}
+
+.zmena-udaju > div > div:nth-child(odd) {
+    text-align: start;
+}
+
+.zmena-udaju h3 {
+    margin: 0;
+    color: #000000;
+}
+
+.zmena-udaju button {
+    width: 9rem;
+    margin: auto;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+.objednavky {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.objednavka {
+    display: flex;
+    justify-content: space-between;
+}
+
+.objednavka div {
+    text-align: end;
+    display: flex;
+    gap: 10px;
+}
+
+.detail-objednavky {
+    margin: 0 33px 0 10%;
+}
+
+.polozka-objednavky {
+    display: flex;
+    justify-content: space-between;
+}
+
+.polozka-objednavky div {
+    display: flex;
+    gap: 40px;
+}

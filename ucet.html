@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kotoučovna eshop</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div id="header-left">
+                <a href="index.html">
+                    <image src="images/Logo.svg" alt="Kotoučovna eshop logo"></image>
+                </a>
+            </div>
+            <div id="header-center">
+                <div id="search">
+                    <form>
+                        <button type="submit"></button>
+                        <input type="search">
+                    </form>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="suplementy.html">Suplementy</a>
+                        </li>
+                        <li>
+                            <a href="obleceni.html">Oblečení</a>
+                        </li>
+                        <li>
+                            <a href="doplnky.html">Doplňky</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="header-right">
+                <div>
+                    <div>
+                        <a href="ucet.html">
+                            <img src="images/icons/account_icon.svg" alt="account_icon" width="30px">
+                        </a>
+                        <a href="login.html">Přihlášení</a>
+                    </div>
+                    <a href="kosik.html" id="kosik">1050 Kč</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="sluzby.html">Služby fitness centra</a>
+                        </li>
+                        <li id="clenstvi">
+                            <a href="clenstvi.html">Členství</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <h1>Účet</h1>
+        <form action="" class="zmena-udaju">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <h3>Adresa</h3>
+            <label for="ulice">Ulice</label>
+            <input type="text" name="ulice" id="ulice">
+            <div>
+                <div>
+                    <label for="cislo-popisne">Číslo popisné</label>
+                    <input type="text" name="cislo-popisne" id="cislo-popisne">
+                </div>
+                <div>
+                    <label for="psc">Psč</label>
+                    <input type="text" name="psc" id="psc">
+                </div>
+            </div>
+            <label for="mesto">Město</label>
+            <input type="text" name="mesto" id="mesto">
+            <button type="submit">Změnit</button>
+        </form>
+        <hr>
+        <h2>Objednávky</h2>
+        <div class="objednavky">
+            <div>
+                <div class="objednavka">
+                    <p>Objednávka č.1</p>
+                    <div>
+                        <p>500 Kč</p>
+                        <button>v</button>
+                    </div>
+                    
+                </div>
+                <div class="detail-objednavky">
+                    <div class="polozka-objednavky">
+                        <p>Název položky</p>
+                        <div>
+                            <p>1 ks</p>
+                            <p>250 Kč</p>
+                        </div>
+                    </div>
+                    <div class="polozka-objednavky">
+                        <p>Název položky</p>
+                        <div>
+                            <p>1 ks</p>
+                            <p>250 Kč</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="objednavka">
+                    <p>Objednávka č.2</p>
+                    <div>
+                        <p>1000 Kč</p>
+                        <button>v</button>
+                    </div>
+                    
+                </div>
+                <div class="detail-objednavky">
+                    <div class="polozka-objednavky">
+                        <p>Název položky</p>
+                        <div>
+                            <p>1 ks</p>
+                            <p>250 Kč</p>
+                        </div>
+                    </div>
+                    <div class="polozka-objednavky">
+                        <p>Název položky</p>
+                        <div>
+                            <p>1 ks</p>
+                            <p>250 Kč</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
