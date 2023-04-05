@@ -162,16 +162,21 @@ nav ul li {
 
 
 .items {
-    display: grid;
-    grid-template-columns: repeat(3, 320px);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 5%;
+    width: 81%;
+    gap: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 15%;
+    min-width: 18.5rem;
     text-align: end;
     padding: 10px;
 }
@@ -232,8 +237,8 @@ nav ul li {
     font-family: "Open Sans";
 }
 
-.kategorie {
-    padding-top: 30px;
+.kategorie h1 {
+    padding-bottom: 1.5rem;
 }
 
 .podkategorie {
@@ -260,6 +265,8 @@ nav ul li {
 .hr {
     display: flex;
     justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 2.5rem;
 }
 
 .hr hr {
@@ -683,6 +690,6 @@ footer nav a {
 
 .description {
 
-    min-width: 60%;
+    min-width: 65%;
 
 }
