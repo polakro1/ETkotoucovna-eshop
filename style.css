@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @font-face {
     font-family: BroshK;
-    src: url(Fonts/broshk/BroshK.otf);
+    src: url(Fonts/broshk/BroshK.ttf);
 }
 
 header a, nav a, h1, h2, h3, h4 {
@@ -602,7 +602,7 @@ footer nav a {
     align-items: center;
 }
 
-.permanentka h3, p {
+.permanentka h3, permanentka p {
     margin: 0;
 }
 
