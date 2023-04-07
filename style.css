@@ -11,6 +11,9 @@ header a, nav a, h1, h2, h3, h4 {
 }
 header {
     font-size: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
 }
 h1, h2, h3, h4{
     color: #FFAB2B;
@@ -34,6 +37,7 @@ p {
     font-family: "Open Sans";
     font-size: 1.125rem;
     color: #000000;
+
 }
 a {
     text-decoration: none;
@@ -53,7 +57,8 @@ body {
 }
 
 header {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -118,6 +123,7 @@ nav ul li {
     display: flex;
     flex-direction: column;   
     text-align: right;
+    min-width: 200px;
 }
 
 #header-right > div {
@@ -161,16 +167,21 @@ nav ul li {
 
 
 .items {
-    display: grid;
-    grid-template-columns: repeat(3, 320px);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 5%;
+    width: 81%;
+    gap: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 15%;
+    min-width: 18.5rem;
     text-align: end;
     padding: 10px;
 }
@@ -231,8 +242,8 @@ nav ul li {
     font-family: "Open Sans";
 }
 
-.kategorie {
-    padding-top: 30px;
+.kategorie h1 {
+    padding-bottom: 1.5rem;
 }
 
 .podkategorie {
@@ -259,6 +270,8 @@ nav ul li {
 .hr {
     display: flex;
     justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 2.5rem;
 }
 
 .hr hr {
@@ -451,6 +464,8 @@ footer nav a {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 #kosik-kroky a {
@@ -473,6 +488,7 @@ footer nav a {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 30px;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .polozky-kosiku button {
@@ -509,6 +525,14 @@ footer nav a {
     flex-direction: column;
     width: fit-content;
     text-align: center;
+    padding-bottom: 2rem;
+}
+
+.pokracovat-v-objednavce a {
+
+    font-size: 1.2rem;
+    margin-top: 1rem;
+
 }
 
 .pokracovat-v-objednavce button {
@@ -649,4 +673,69 @@ footer nav a {
 .polozka-objednavky div {
     display: flex;
     gap: 40px;
+}
+
+.product {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    flex-wrap: wrap;
+    text-align: justify;
+
+}
+
+.product img {
+
+    flex: 2;
+    margin-right: 5%;
+    max-height: 50rem;
+
+}
+
+.product article {
+
+    flex: 3;
+    margin-top: 2rem;
+    padding-right: 4rem;
+
+}
+
+.description {
+
+    min-width: 65%;
+
+}
+
+@media screen and (max-width: 1050px){
+
+header {
+
+    flex-wrap: wrap;
+
+}
+
+#header-right {
+
+    min-width: 90%;
+    flex-direction: row;
+    margin-top: 2rem;
+
+}
+
+header nav {
+
+    margin-top: 1.5rem;
+
+}
+
+#search {
+
+    min-width: 400px;
+
+}
+
 }
