@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="cs">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE0BJKDM81"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BE0BJKDM81');
+        </script>
         <meta charset="UTF-8">
         <title>Kotoučovna eshop</title>
         <link rel="stylesheet" href="style.css" type="text/css">
@@ -35,7 +44,12 @@
             </div>
             <div id="header-right">
                 <div>
-                    <a href="login.html">Přihlášení</a>
+                    <div>
+                        <a href="ucet.html">
+                            <img src="images/icons/account_icon.svg" alt="account_icon" width="30px">
+                        </a>
+                        <a href="login.html">Přihlášení</a>
+                    </div>
                     <a href="kosik.html" id="kosik">1050 Kč</a>
                 </div>
                 <nav>
@@ -94,5 +108,39 @@
                 <button>Koupit</button>
             </div>
         </div>
+        <footer>
+            <div>
+                <div>
+                    <h3>Fitness centrum Kotoučovna</h3>
+                    <p>Orlická 245</p>
+                    <p>Třebechovice pod Orebem</p>
+                    <p>503 46</p>
+                </div>
+                <div class="odkazy">
+                    <a>
+                        <img src="Images/icons/tel_icon.svg" alt="Telefon">
+                        <p>697 728 543</p>
+                    </a>
+                    <a>
+                        <img src="Images/icons/email_icon.svg" alt="Email">
+                        <p>info@kotoucovna.cz</p>
+                    </a>
+                    <div id="footer-icons">
+                        <a><img src="Images/icons/facebook_icon.svg" alt="Facebook"></a>
+                        <a><img src="Images/icons/instagram_icon.svg" alt="Instagram"></a>
+                        <a><img src="Images/icons/tiktok_icon.svg" alt="TikTok"></a>
+                    </div>
+                </div>
+                <div>
+                    <nav>
+                        <a href="suplementy.html">Suplementy</a>
+                        <a href="">Oblečení</a>
+                        <a href="">Doplňky</a>
+                        <a href="">Služby fitness centra</a>
+                        <a href="">Členství</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

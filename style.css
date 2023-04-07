@@ -11,9 +11,6 @@ header a, nav a, h1, h2, h3, h4 {
 }
 header {
     font-size: 1.8rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 1rem;
 }
 h1, h2, h3, h4{
     color: #FFAB2B;
@@ -57,8 +54,8 @@ body {
 }
 
 header {
-    border-bottom: 2px solid black;
-    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
     display: flex;
     justify-content: center;
 }
@@ -167,21 +164,23 @@ nav ul li {
 
 
 .items {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
     justify-content: center;
-    width: 81%;
-    gap: 3rem;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 5%;
+    padding: 0 10%;
+}
+
+@media screen and (max-width: 1070px) {
+    .items {
+        grid-template-columns: 1fr;
+
+    }
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    max-width: 15%;
-    min-width: 18.5rem;
     text-align: end;
     padding: 10px;
 }
@@ -555,19 +554,29 @@ footer nav a {
     padding: 5px;
     border-radius: 5px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    height: ;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.clenstvi > div > div {
+
 }
 
 .clenstvi h2 {
     margin: 0;
     color: #000000;
 }
+
 .clenstvi button {
     margin-top: 20px;
     font-size: 2rem;
     padding: 10px;
     background-color: #FFAB2B;
     border: none;
+    width: fit-content;
 }
 
 #zlate {
@@ -583,7 +592,7 @@ footer nav a {
 }
 
 .permanentky {
-    margin: 40px 20% 0 20%;
+    margin: 40px 20% auto 20%;
 }
 
 .permanentka {
@@ -601,8 +610,11 @@ footer nav a {
     color: #000000;
 }
 
+.permanentka button {
+    padding: 0.5rem;
+}
+
 .zmena-udaju {
-    align-items: ce;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -710,32 +722,37 @@ footer nav a {
 
 }
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1050px) {
 
-header {
+    header {
 
-    flex-wrap: wrap;
+        flex-wrap: wrap;
 
+    }
+
+    #header-right {
+
+        min-width: 90%;
+        flex-direction: row;
+        margin-top: 2rem;
+
+    }
+
+    header nav {
+
+        margin-top: 1.5rem;
+
+    }
+
+    #search {
+
+        min-width: 400px;
+
+    }
 }
 
-#header-right {
-
-    min-width: 90%;
-    flex-direction: row;
-    margin-top: 2rem;
-
-}
-
-header nav {
-
-    margin-top: 1.5rem;
-
-}
-
-#search {
-
-    min-width: 400px;
-
-}
-
+#footer-fix {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
