@@ -530,8 +530,8 @@ footer nav a {
 .pokracovat-v-objednavce a {
 
     font-size: 1.2rem;
-    margin-top: 1rem;
-
+    margin-top: 0.5rem;
+    font-family: "Open Sans";
 }
 
 .pokracovat-v-objednavce button {
